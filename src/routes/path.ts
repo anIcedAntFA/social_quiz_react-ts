@@ -10,6 +10,7 @@ export const PATH_AUTH = {
   root: ROOT_AUTH,
   register: generatePaths(ROOT_AUTH, config.ROUTES.REGISTER),
   login: generatePaths(ROOT_AUTH, config.ROUTES.LOGIN),
+  resetPassword: generatePaths(ROOT_AUTH, config.ROUTES.RESET_PASSWORD),
 };
 
 export const PATH_PAGE = {

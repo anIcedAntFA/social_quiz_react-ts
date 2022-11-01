@@ -1,6 +1,5 @@
-import Brightness2Icon from '@mui/icons-material/Brightness2';
-import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { IconButton } from '@mui/material';
+import { Brightness2Icon, Brightness7Icon } from 'src/components/Icons';
 
 import Tooltip from 'src/components/Tooltip';
 import { useThemeSetting } from 'src/hooks';

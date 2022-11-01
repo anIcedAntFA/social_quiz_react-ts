@@ -1,5 +1,6 @@
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import { Badge, IconButton } from '@mui/material';
+import { NotificationsNoneIcon } from 'src/components/Icons';
+
 import Tooltip from 'src/components/Tooltip';
 
 export default function Notifications() {

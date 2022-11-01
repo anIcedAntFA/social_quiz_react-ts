@@ -12,11 +12,11 @@ interface ILayoutProps {
 export default function Layout({ variants }: ILayoutProps) {
   if (variants === 'auth') {
     return (
-      // <RootStyle>
-      //   <ContainerStyle maxWidth="md">
-      <Outlet />
-      //   </ContainerStyle>
-      // </RootStyle>
+      <RootStyle>
+        <ContainerStyle maxWidth="sm">
+          <Outlet />
+        </ContainerStyle>
+      </RootStyle>
     );
   }
 
@@ -33,20 +33,20 @@ export default function Layout({ variants }: ILayoutProps) {
   );
 }
 
-// const RootStyle = styled(`div`)(({ theme }) => ({
-//   display: 'flex',
-//   justifyContent: 'center',
-//   alignItems: 'center',
-//   width: '100vw',
-//   height: '100vh',
-// }));
+const RootStyle = styled(`div`)(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '100vw',
+  height: '100vh',
+}));
 
-// const ContainerStyle = styled(Container)(({ theme }) => ({
-//   display: 'flex',
-//   flexDirection: 'column',
-//   gap: '24px',
-//   padding: '32px 24px',
-//   borderRadius: '8px',
-//   backgroundColor: theme.palette.background.paper,
-//   boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
-// })) as typeof Container;
+const ContainerStyle = styled(Container)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '24px',
+  padding: '32px 24px',
+  borderRadius: '8px',
+  backgroundColor: theme.palette.background.paper,
+  boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+})) as typeof Container;

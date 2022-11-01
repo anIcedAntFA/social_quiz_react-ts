@@ -46,7 +46,7 @@ export default function Header() {
                   component={Link}
                   to={page.path as string}
                   startIcon={page.icon}
-                  sx={isActive ? { border: '1px solid #ff1744', fontWeight: 'bold' } : {}}
+                  sx={isActive ? { border: '1px solid #2979ff', fontWeight: 'bold' } : {}}
                 >
                   {page.title}
                 </Button>

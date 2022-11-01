@@ -3,7 +3,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Layout from 'src/layouts';
 import AboutPage from 'src/pages/about';
 import { Dashboard } from 'src/pages/admin';
-import { LoginPage, RegisterPage } from 'src/pages/auth';
+import { LoginPage, RegisterPage, ResetPasswordPage } from 'src/pages/auth';
 import ContactPage from 'src/pages/contact';
 import ErrorPage from 'src/pages/error';
 import FeedbackPage from 'src/pages/feedback';
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: PATH_AUTH.login,
         element: <LoginPage />,
+      },
+      {
+        path: PATH_AUTH.resetPassword,
+        element: <ResetPasswordPage />,
       },
     ],
     errorElement: <ErrorPage />,

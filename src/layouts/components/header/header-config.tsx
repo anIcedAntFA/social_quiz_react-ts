@@ -1,13 +1,16 @@
-import ContactSupportIcon from '@mui/icons-material/ContactSupport';
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import HomeIcon from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
-import LanguageIcon from '@mui/icons-material/Language';
-import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
-import SettingsIcon from '@mui/icons-material/Settings';
-import { EnglishIcon, VietnameseIcon } from 'src/components/Icons';
-import LogoutIcon from '@mui/icons-material/Logout';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import {
+  ContactSupportIcon,
+  EnglishIcon,
+  HelpOutlineIcon,
+  HomeIcon,
+  InfoIcon,
+  LanguageIcon,
+  LogoutIcon,
+  MilitaryTechIcon,
+  PersonOutlineIcon,
+  SettingsIcon,
+  VietnameseIcon,
+} from 'src/components/Icons';
 
 import { PATH_PAGE, PATH_USER } from 'src/routes/path';
 

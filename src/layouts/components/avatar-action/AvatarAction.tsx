@@ -1,5 +1,3 @@
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
 import {
   Avatar as MuiAvatar,
   Collapse,
@@ -16,6 +14,7 @@ import { useNavigate } from 'react-router-dom';
 import Tooltip from 'src/components/Tooltip';
 import { images } from 'src/constant';
 import { MENU_USER_ITEMS } from '../header/header-config';
+import { ExpandLess, ExpandMore } from 'src/components/Icons';
 
 export default function AvatarAction() {
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);

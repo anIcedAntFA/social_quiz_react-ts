@@ -1,5 +1,6 @@
-import TelegramIcon from '@mui/icons-material/Telegram';
 import { IconButton } from '@mui/material';
+import { TelegramIcon } from 'src/components/Icons';
+
 import Tooltip from 'src/components/Tooltip';
 
 export default function Message() {

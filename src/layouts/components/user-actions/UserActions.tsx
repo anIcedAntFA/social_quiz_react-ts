@@ -1,8 +1,3 @@
-import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import LoginIcon from '@mui/icons-material/Login';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import {
   Button,
   Collapse,
@@ -17,6 +12,13 @@ import {
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+import {
+  AppRegistrationIcon,
+  ExpandLess,
+  ExpandMore,
+  LoginIcon,
+  MoreVertIcon,
+} from 'src/components/Icons';
 import { PATH_AUTH } from 'src/routes/path';
 import { MENU_ITEMS } from '../header/header-config';
 

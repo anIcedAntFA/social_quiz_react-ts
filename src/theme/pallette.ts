@@ -30,9 +30,9 @@ interface IPallette {
 // };
 
 export const primary: IColor = {
-  light: '#ff5252',
-  main: '#ff1744',
-  dark: '#d50000',
+  light: '#448aff',
+  main: '#2979ff',
+  dark: '#2962ff',
 };
 
 export const secondary: IColor = {

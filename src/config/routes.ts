@@ -2,6 +2,7 @@ const ROUTES = {
   AUTH: '/auth',
   REGISTER: 'register',
   LOGIN: 'login',
+  RESET_PASSWORD: 'reset-password',
 
   HOME: '/',
   SETTINGS: 'settings',
