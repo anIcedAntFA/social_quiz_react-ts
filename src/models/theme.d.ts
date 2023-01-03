@@ -16,11 +16,11 @@ export interface ICustomShadows {
 }
 declare module '@mui/material/styles' {
   interface Palette {
-    neutral: Palette['primary'];
+    neutral: Palette['secondary'];
   }
 
   interface PaletteOptions {
-    neutral?: PaletteOptions['primary'];
+    neutral?: PaletteOptions['secondary'];
   }
 
   interface Theme {

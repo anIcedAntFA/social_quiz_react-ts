@@ -8,7 +8,7 @@ import { ReactElement, ReactNode, useMemo } from 'react';
 import { useThemeSetting } from '../hooks';
 import breakpoints from './breakpoint';
 import overridesComponents from './overrides';
-import paletteMode from './pallette';
+import paletteMode from './palette';
 import shadows, { customShadows } from './shadow';
 
 interface ThemeProviderProps {

@@ -9,20 +9,21 @@ import {
   MilitaryTechIcon,
   PersonOutlineIcon,
   SettingsIcon,
+  StyleIcon,
   VietnameseIcon,
 } from 'src/components/Icons';
 
 import { PATH_PAGE, PATH_USER } from 'src/routes/path';
 
-interface IMenuItemsProps {
+type MenuItemsProps = {
   title: string;
   icon?: JSX.Element;
   path?: string;
   onClick?: () => void;
-  children?: IMenuItemsProps[];
-}
+  children?: MenuItemsProps[];
+};
 
-export const NAV_LINKS: IMenuItemsProps[] = [
+export const NAV_LINKS: MenuItemsProps[] = [
   {
     title: 'Home',
     icon: <HomeIcon />,
@@ -39,6 +40,11 @@ export const NAV_LINKS: IMenuItemsProps[] = [
     path: PATH_PAGE.ranking,
   },
   {
+    title: 'Flashcards',
+    icon: <StyleIcon />,
+    path: PATH_PAGE.flashcards,
+  },
+  {
     title: 'About',
     icon: <InfoIcon />,
     path: PATH_PAGE.about,
@@ -50,7 +56,7 @@ export const NAV_LINKS: IMenuItemsProps[] = [
   },
 ];
 
-export const MENU_ITEMS: IMenuItemsProps[] = [
+export const MENU_ITEMS: MenuItemsProps[] = [
   {
     title: 'Languages',
     icon: <LanguageIcon />,
@@ -72,7 +78,7 @@ export const MENU_ITEMS: IMenuItemsProps[] = [
   },
 ];
 
-export const MENU_USER_ITEMS: IMenuItemsProps[] = [
+export const MENU_USER_ITEMS: MenuItemsProps[] = [
   {
     title: 'View profile',
     icon: <PersonOutlineIcon />,

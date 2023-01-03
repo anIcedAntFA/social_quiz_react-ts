@@ -8,5 +8,13 @@ import LoginFormPhone from './LoginFormPhone';
 export default function LoginForm() {
   const { openForm, openEmail } = useAppSelector(authFormSelector);
 
-  return <>{openForm ? openEmail ? <LoginFormEmail /> : <LoginFormPhone /> : <AuthCta />}</>;
+  const render = () => {
+    if (openForm) {
+      return openEmail ? <LoginFormEmail /> : <LoginFormPhone />;
+    } else {
+      return <AuthCta />;
+    }
+  };
+
+  return <>{render()}</>;
 }

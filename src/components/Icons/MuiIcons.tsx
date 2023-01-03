@@ -16,6 +16,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import SettingsIcon from '@mui/icons-material/Settings';
+import StyleIcon from '@mui/icons-material/Style';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
@@ -39,6 +40,7 @@ export {
   NotificationsNoneIcon,
   PersonOutlineIcon,
   SettingsIcon,
+  StyleIcon,
   TelegramIcon,
   Visibility,
   VisibilityOff,

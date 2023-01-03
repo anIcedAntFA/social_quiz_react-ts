@@ -3,11 +3,13 @@ import { LoadingButton } from '@mui/lab';
 import { Button, InputAdornment, Stack, Typography } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import * as Yup from 'yup';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 import { FormProvider, TextField } from 'src/components/HookForms';
 import { AppRegistrationIcon, ArrowBackIosNewIcon, TelegramIcon } from 'src/components/Icons';
 import { useAppDispatch } from 'src/redux/hooks';
 import { back, toggleAuthFormChange } from 'src/redux/slices/auth-form-slice';
+import { auth } from 'src/firebase.config';
 
 interface IRegisterValues {
   fullName: string;
@@ -43,9 +45,9 @@ const registerSchema = Yup.object().shape({
       /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,20}$/,
       `<PasswordRules />`,
     ),
-  code: Yup.number()
-    .typeError('*Please enter 6-digit code')
-    .integer('*This field must contain integers'),
+  // code: Yup.number()
+  //   .typeError('*Please enter 6-digit code')
+  //   .integer('*This field must contain integers'),
 });
 
 const defaultValues: IRegisterValues = {
@@ -69,8 +71,16 @@ export default function RegisterFormEmail() {
     formState: { isValid },
   } = methods;
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data: IRegisterValues) => {
     console.log(data);
+    const { fullName, email, password } = data;
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+      console.log(user);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const handleToggleRegisterFormChange = () => dispatch(toggleAuthFormChange());

@@ -11,7 +11,7 @@ interface ITooltipProps extends TooltipProps {
 export default function Tooltip({
   title,
   children,
-  color = '#2979ff',
+  color = '#651fff',
   sx,
   ...passProps
 }: ITooltipProps) {

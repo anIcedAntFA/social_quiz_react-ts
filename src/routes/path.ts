@@ -17,6 +17,7 @@ export const PATH_PAGE = {
   root: ROOT_PAGE,
   settings: config.ROUTES.SETTINGS,
   ranking: config.ROUTES.RANKING,
+  flashcards: config.ROUTES.FLASHCARDS,
   about: config.ROUTES.ABOUT,
   contact: config.ROUTES.CONTACT,
   feedback: config.ROUTES.FEEDBACK,

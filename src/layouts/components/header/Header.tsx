@@ -5,6 +5,7 @@ import { PATH_PAGE } from 'src/routes/path';
 import { LoggedInUserActions } from '../logged-in-user-actions';
 import { UserActions } from '../user-actions';
 import { NAV_LINKS } from './header-config';
+import { palette, primary } from 'src/theme/palette';
 
 export default function Header() {
   const { pathname } = useLocation();
@@ -46,7 +47,7 @@ export default function Header() {
                   component={Link}
                   to={page.path as string}
                   startIcon={page.icon}
-                  sx={isActive ? { border: '1px solid #2979ff', fontWeight: 'bold' } : {}}
+                  sx={isActive ? { border: `1px solid ${primary.main}`, fontWeight: 'bold' } : {}}
                 >
                   {page.title}
                 </Button>

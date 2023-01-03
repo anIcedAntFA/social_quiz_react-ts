@@ -7,6 +7,7 @@ import { LoginPage, RegisterPage, ResetPasswordPage } from 'src/pages/auth';
 import ContactPage from 'src/pages/contact';
 import ErrorPage from 'src/pages/error';
 import FeedbackPage from 'src/pages/feedback';
+import FlashcardsPage from 'src/pages/flashcards';
 import HomePage from 'src/pages/home';
 import RankingPage from 'src/pages/ranking';
 import SettingsPage from 'src/pages/settings';
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
       { element: <HomePage />, index: true },
       { path: PATH_PAGE.settings, element: <SettingsPage /> },
       { path: PATH_PAGE.ranking, element: <RankingPage /> },
+      { path: PATH_PAGE.flashcards, element: <FlashcardsPage /> },
       { path: PATH_PAGE.about, element: <AboutPage /> },
       { path: PATH_PAGE.contact, element: <ContactPage /> },
       { path: PATH_PAGE.feedback, element: <FeedbackPage /> },

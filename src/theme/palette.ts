@@ -30,16 +30,16 @@ interface IPallette {
 // };
 
 export const primary: IColor = {
-  light: '#448aff',
-  main: '#2979ff',
-  dark: '#2962ff',
+  light: '#ff4081',
+  main: '#f50057',
+  dark: '#c51162',
 };
 
 export const secondary: IColor = {
   lighter: '#D6E4FF',
-  light: '#84A9FF',
-  main: '#3366FF',
-  dark: '#1939B7',
+  light: '#ff4081',
+  main: '#f50057',
+  dark: '#c51162',
   darker: '#091A7A',
 };
 export const info: IColor = {
@@ -84,7 +84,7 @@ export const grey = {
   900: '#161C24',
 };
 
-const palette: PaletteOptions = {
+export const palette: PaletteOptions = {
   common: {
     black: '#000',
     white: '#FFF',
@@ -113,7 +113,7 @@ const palette: PaletteOptions = {
     ...info,
     contrastText: '#FFF',
   },
-  grey: grey,
+  grey,
   divider: alpha(grey[500], 0.24),
   action: {
     hover: alpha(grey[500], 0.08),
@@ -141,7 +141,7 @@ const paletteMode: IPallette = {
     ...palette,
     mode: 'dark',
     text: { primary: '#fff', secondary: grey[500], disabled: grey[600] },
-    background: { paper: grey[800], default: grey[900] },
+    background: { paper: '#191d1e', default: '#191d1e' },
     action: {
       ...palette.action,
       active: grey[500],

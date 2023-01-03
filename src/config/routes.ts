@@ -7,6 +7,7 @@ const ROUTES = {
   HOME: '/',
   SETTINGS: 'settings',
   RANKING: 'ranking',
+  FLASHCARDS: 'flashcards',
   ABOUT: 'about',
   CONTACT: 'contact',
   FEEDBACK: 'feedback',

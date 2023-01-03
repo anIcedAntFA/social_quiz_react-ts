@@ -3,7 +3,7 @@
 import { alpha, Shadows } from '@mui/material/styles';
 import { ICustomShadows } from '../types/theme';
 //
-import { error, grey, info, primary, secondary, success, warning } from './pallette';
+import { error, grey, info, primary, secondary, success, warning } from './palette';
 
 // ----------------------------------------------------------------------
 

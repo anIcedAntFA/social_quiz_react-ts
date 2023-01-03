@@ -14,7 +14,7 @@ export default function ThemeMode() {
   };
 
   return (
-    <Tooltip title={isLight ? 'Dark mode' : 'Light mode'} color={isLight ? 'black' : 'orange'}>
+    <Tooltip title={isLight ? 'Dark mode' : 'Light mode'} color={isLight ? '#651fff' : '#f50057'}>
       <IconButton color="inherit" onClick={handleToggleThemeModeChange}>
         {isLight ? <Brightness2Icon /> : <Brightness7Icon />}
       </IconButton>
